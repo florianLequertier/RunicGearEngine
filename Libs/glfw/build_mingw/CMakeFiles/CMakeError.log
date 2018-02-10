@@ -1,0 +1,116 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_53655/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_53655.dir\build.make CMakeFiles/cmTC_53655.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53655.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_53655.dir\CheckSymbolExists.c.obj   -c D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+Linking C executable cmTC_53655.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_53655.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_53655.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_53655.dir/objects.a @CMakeFiles\cmTC_53655.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_53655.dir/objects.a -Wl,--no-whole-archive  -o cmTC_53655.exe -Wl,--out-implib,libcmTC_53655.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_53655.dir\linklibs.rsp
+CMakeFiles\cmTC_53655.dir/objects.a(CheckSymbolExists.c.obj):CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_53655.dir\build.make:98: recipe for target 'cmTC_53655.exe' failed
+mingw32-make.exe[1]: *** [cmTC_53655.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_53655/fast' failed
+mingw32-make.exe: *** [cmTC_53655/fast] Error 2
+
+File D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_dfe8d/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_dfe8d.dir\build.make CMakeFiles/cmTC_dfe8d.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfe8d.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles\cmTC_dfe8d.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_dfe8d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dfe8d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_dfe8d.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_dfe8d.dir/objects.a @CMakeFiles\cmTC_dfe8d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create    -Wl,--whole-archive CMakeFiles\cmTC_dfe8d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dfe8d.exe -Wl,--out-implib,libcmTC_dfe8d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_dfe8d.dir\linklibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_dfe8d.dir\build.make:98: recipe for target 'cmTC_dfe8d.exe' failed
+mingw32-make.exe[1]: *** [cmTC_dfe8d.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_dfe8d/fast' failed
+mingw32-make.exe: *** [cmTC_dfe8d/fast] Error 2
+
+
+Determining if the include file dinput.h exists failed with the following output:
+Change Dir: D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b9f5a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b9f5a.dir\build.make CMakeFiles/cmTC_b9f5a.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9f5a.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_b9f5a.dir\CheckIncludeFile.c.obj   -c D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:20: fatal error: dinput.h: No such file or directory
+compilation terminated.
+CMakeFiles\cmTC_b9f5a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b9f5a.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b9f5a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b9f5a/fast' failed
+mingw32-make.exe: *** [cmTC_b9f5a/fast] Error 2
+
+
+Determining if the include file xinput.h exists failed with the following output:
+Change Dir: D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e7192/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e7192.dir\build.make CMakeFiles/cmTC_e7192.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7192.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_e7192.dir\CheckIncludeFile.c.obj   -c D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:20: fatal error: xinput.h: No such file or directory
+compilation terminated.
+CMakeFiles\cmTC_e7192.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_e7192.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_e7192.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_e7192/fast' failed
+mingw32-make.exe: *** [cmTC_e7192/fast] Error 2
+
+
+Performing C SOURCE FILE Test _GLFW_HAS_64ASLR failed with the following output:
+Change Dir: D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_c6436/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_c6436.dir\build.make CMakeFiles/cmTC_c6436.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6436.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -D_GLFW_HAS_64ASLR -Wl,--high-entropy-va   -o CMakeFiles\cmTC_c6436.dir\src.c.obj   -c D:\programmation\libraries\glfw-3.2.1\build_mingw\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_c6436.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c6436.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c6436.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_c6436.dir/objects.a @CMakeFiles\cmTC_c6436.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe   -D_GLFW_HAS_64ASLR -Wl,--high-entropy-va    -Wl,--whole-archive CMakeFiles\cmTC_c6436.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c6436.exe -Wl,--out-implib,libcmTC_c6436.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c6436.dir\linklibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: unrecognized option '--high-entropy-va'
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_c6436.dir\build.make:98: recipe for target 'cmTC_c6436.exe' failed
+mingw32-make.exe[1]: *** [cmTC_c6436.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/programmation/libraries/glfw-3.2.1/build_mingw/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_c6436/fast' failed
+mingw32-make.exe: *** [cmTC_c6436/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }

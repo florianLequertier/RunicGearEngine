@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/programmation/libraries/glfw-3.2.1/tests/CMakeLists.txt
+  CMake does not need to re-run because D:\programmation\libraries\glfw-3.2.1\build_vs\tests\CMakeFiles\generate.stamp is up-to-date.
+  events.c
+  getopt.c
+  glad.c
+  Génération de code en cours...
+  events.vcxproj -> D:\programmation\libraries\glfw-3.2.1\build_vs\tests\Debug\events.exe
